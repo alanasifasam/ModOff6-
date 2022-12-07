@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <h5> {{status}} --- {{connectionType}}</h5>
+  
+  <ion-card>
+    <h1>Cadastro </h1>
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <form (ngSubmit)="submit()">
+      <ion-list>
+        <ion-item>
+          <ion-label>key:</ion-label>
+          <ion-input type="text" name="key" [(ngModel)]="key"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Nome:</ion-label>
+          <ion-input type="text" name="nome" [(ngModel)]="Cadastro.Nome"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Sobrenome:</ion-label>
+          <ion-input type="text" name="nome" [(ngModel)]="Cadastro.Sobrenome"></ion-input>
+        </ion-item>
+
+        <ion-button type="submit">Salvar</ion-button>
+      </ion-list>
+    </form>
+  </ion-card>
+  <ion-card >
+    
+  </ion-card>
+
+</ion-content>

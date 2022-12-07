@@ -1,0 +1,7 @@
+{
+  "name": "ModOff6",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
